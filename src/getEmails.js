@@ -10,7 +10,7 @@ const getEmails = async () => {
     const page = await browser.newPage();
 
     try {
-        const [subjectId, user, password] = [
+        const [user, password, subjectId] = [
             question("Type your Turing user: "),
             question("Type your Turing password: "),
             question(
